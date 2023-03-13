@@ -1,0 +1,23 @@
+@use '../abstracts' as *;
+
+// Text colors
+.text-primary {
+  color: $semi-black;
+}
+.text-orange {
+  color: $orange;
+}
+.text-green {
+  color: $green;
+}
+.text-white {
+  color: $white;
+}
+
+// Background colors
+.background-orange {
+  background-color: $orange;
+}
+.background-light-gray {
+  background-color: $light-gray;
+}

@@ -1,0 +1,65 @@
+@use '../abstracts' as *;
+
+// Select
+.select-wrap {
+  border-radius: 4px 4px 0px 0px;
+  padding: 10px;
+  background-color: $white;
+  label {
+    @include font-prop($fn-11, $fn-w-400, $darkest-gray);
+    padding: 0 4px 4px;
+  }
+  select {
+    @include font-prop($fn-13, $fn-w-400, $semi-black);
+    background-color: $white;
+    border: 0;
+    outline: none;
+    option {
+      font-size: $fn-18;
+    }
+  }
+}
+
+// Checkbox
+.checkbox input:checked,
+.checkbox input:focus:checked,
+.checkbox input:active {
+  background-color: $green;
+  border: 1px solid $green;
+}
+
+// Buttons
+.btn {
+  border: 1px solid $medium-gray;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: $fn-16;
+  font-weight: $fn-w-600;
+  text-transform: capitalize;
+}
+@mixin button($color-1, $color-2) {
+  @extend .btn;
+  background: $color-1;
+  color: $color-2;
+  &:hover {
+    background: $color-2;
+    color: $color-1;
+    transition: all 0.3s ease;
+  }
+}
+
+.btn-green {
+  @include button($green, $white);
+}
+
+.btn-green-inverse {
+  @include button($white, $green);
+}
+
+.btn-orange {
+  @include button($orange, $white);
+}
+
+.btn-orange-inverse {
+  @include button($white, $orange);
+}

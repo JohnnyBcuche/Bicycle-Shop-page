@@ -1,0 +1,21 @@
+// Font weight
+$fn-w-400: 400;
+$fn-w-600: 600;
+
+// Font size
+$fn-11: 11px;
+$fn-13: 13px;
+$fn-14: 14px;
+$fn-16: 16px;
+$fn-18: 18px;
+$fn-20: 20px;
+$fn-24: 24px;
+$fn-28: 28px;
+$fn-40: 40px;
+
+// Font properties
+@mixin font-prop($fn-size, $fn-weight, $fn-color) {
+  font-size: $fn-size;
+  font-weight: $fn-weight;
+  color: $fn-color;
+}

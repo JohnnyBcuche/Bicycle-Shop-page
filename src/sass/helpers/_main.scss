@@ -1,0 +1,83 @@
+@use '../abstracts' as *;
+
+// Defaults
+html,
+body {
+  font-family: "Inter", sans-serif;
+}
+
+p {
+  @include font-prop($fn-16, $fn-w-400, $semi-black);
+}
+
+h1 {
+  @include font-prop($fn-40, $fn-w-600, $semi-black);
+  font-family: "Poppins";
+  @media (max-width: 756px) {
+    font-size: $fn-28;
+  }
+}
+
+h2 {
+  @include font-prop($fn-28, $fn-w-600, $semi-black);
+  font-family: "Poppins";
+  @media (max-width: 756px) {
+    font-size: $fn-24;
+  }
+}
+
+// Overwrites
+a:hover {
+  color: $darkest-gray;
+}
+a:hover,
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+.uk-table {
+  font-size: $fn-14;
+  th {
+    color: $orange;
+    font-weight: $fn-w-600;
+    text-transform: capitalize;
+  }
+}
+
+.uk-input,
+.uk-textarea {
+  &:focus {
+    background-color: $light-gray;
+  }
+}
+
+// Custom classes
+.arrow-circle {
+  display: inline-flex;
+  background: $light-gray;
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+  svg {
+    margin: auto;
+  }
+}
+
+.badge {
+  position: absolute;
+  top: 40px;
+  right: 4px;
+  font-size: 15px;
+  padding: 0 7px;
+  border-radius: 50%;
+  background-color: $green;
+  color: $white;
+}
+
+@media (max-width: 756px) {
+  .product-header {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- UIkit CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/uikit@3.16.5/dist/css/uikit.min.css"
+    />
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.5/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.5/dist/js/uikit-icons.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/index.css" />
+    <meta
+      name="description"
+      content="Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur."
+    />
+    <meta name="keywords" content="Product, products, shopping, gallery" />
+    <title>Bicycle Shop - The best shop on the market</title>
+  </head>
+
+  <body>
+    <nav class="uk-navbar-container">
+      <div class="uk-container uk-container-large">
+        <div uk-navbar>
+          <div class="uk-navbar-left nav-left">
+            <div class="uk-hidden@m">
+              <a
+                href="#offcanvas-slide"
+                class="uk-navbar-toggle text-white"
+                uk-navbar-toggle-icon
+                uk-toggle
+              ></a>
+
+              <div id="offcanvas-slide" uk-offcanvas>
+                <button
+                  class="uk-modal-close-default"
+                  type="button"
+                  aria-label="Close"
+                  uk-close
+                ></button>
+                <div class="uk-offcanvas-bar">
+                  <ul class="uk-nav uk-nav-default">
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <p
+              class="uk-text-bolder uk-text-uppercase uk-margin-remove text-white fn-xl"
+              href="#"
+            >
+              Logo
+            </p>
+            <ul
+              class="uk-navbar-nav uk-padding uk-padding-remove-vertical uk-visible@m"
+            >
+              <li class="uk-active active"><a href="#">Products</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="uk-margin uk-visible@m">
+              <form class="uk-search uk-search-default">
+                <span class="uk-search-icon-flip" uk-search-icon></span>
+                <input
+                  class="uk-search-input"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+              </form>
+            </div>
+          </div>
+
+          <div class="uk-navbar-right">
+            <div class="uk-flex uk-flex-middle uk-text-center">
+              <div class="uk-padding-small uk-padding-remove-vertical">
+                <a class="text-white"><i class="far fa-user fn-icon"></i></a>
+              </div>
+              <div class="uk-padding-small uk-padding-remove-vertical">
+                <a class="text-white"><i class="far fa-heart fn-icon"></i></a>
+              </div>
+              <div class="uk-padding-small uk-padding-remove-vertical">
+                <a class="text-white">
+                  <i class="fas fa-shopping-cart fn-icon"></i>
+                  <span class="badge">1</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="uk-container uk-container-large">
+      <div class="uk-margin-medium-top uk-flex">
+        <div>
+          <a class="uk-flex uk-flex-middle text-primary" href="#">
+            <p class="uk-margin-remove fn-small">Home</p>
+            <span class="uk-margin-small-right" uk-icon="chevron-right"></span>
+          </a>
+        </div>
+        <div>
+          <a class="uk-flex uk-flex-middle text-primary" href="#">
+            <p class="uk-margin-remove fn-small">Products</p>
+            <span class="uk-margin-small-right" uk-icon="chevron-right"></span>
+          </a>
+        </div>
+        <div>
+          <a class="uk-flex uk-flex-middle text-primary" href="#">
+            <p class="uk-margin-remove fn-small">Bikes</p>
+            <span class="uk-margin-small-right" uk-icon="chevron-right"></span>
+          </a>
+        </div>
+      </div>
+
+      <div
+        class="uk-flex uk-flex-between uk-padding-small uk-padding-remove-horizontal product-header"
+      >
+        <div class="uk-flex uk-flex-middle">
+          <h1>Product name lorem ipsum</h1>
+        </div>
+        <div class="uk-flex uk-flex-middle uk-flex-right">
+          <div class="uk-padding-small uk-padding-remove-vertical">
+            <a class="text-primary"
+              ><i class="fas fa-arrow-left fn-icon"></i
+            ></a>
+          </div>
+          <div class="uk-padding-small uk-padding-remove-vertical">
+            <a class="text-primary"
+              ><i class="fas fa-arrow-right fn-icon"></i
+            ></a>
+          </div>
+          <div class="uk-padding-small uk-padding-remove-vertical">
+            <a class="text-primary"><i class="far fa-heart fn-icon"></i></a>
+          </div>
+          <div class="uk-padding-small uk-padding-remove-vertical">
+            <a class="text-primary"><i class="fas fa-share-alt fn-icon"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="uk-child-width-1-2@m uk-grid-small uk-grid-match" uk-grid>
+        <div>
+          <div
+            class="uk-position-relative uk-visible-toggle"
+            tabindex="-1"
+            uk-slideshow
+          >
+            <ul class="uk-slideshow-items">
+              <li>
+                <img
+                  src="./assets/images/bicycle1.png"
+                  alt="bicycle to shop image 1"
+                  uk-cover
+                />
+              </li>
+              <li>
+                <img
+                  src="./assets/images/bicycle1.png"
+                  alt="bicycle to shop image 2"
+                  uk-cover
+                />
+              </li>
+              <li>
+                <img
+                  src="./assets/images/bicycle1.png"
+                  alt="bicycle to shop image 3"
+                  uk-cover
+                />
+              </li>
+            </ul>
+
+            <a
+              class="uk-position-center-left uk-position-small arrow-circle"
+              href="#"
+              uk-slidenav-previous
+              uk-slideshow-item="previous"
+            ></a>
+            <a
+              class="uk-position-center-right uk-position-small arrow-circle"
+              href="#"
+              uk-slidenav-next
+              uk-slideshow-item="next"
+            ></a>
+          </div>
+        </div>
+        <div>
+          <div class="uk-card uk-card-body background-light-gray fn-paragraph">
+            <p class="fn-w-600">
+              In stock <span class="text-orange">- only 2 left</span>
+            </p>
+            <p>
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit
+              anim id est laborum.
+            </p>
+            <form>
+              <fieldset class="uk-fieldset">
+                <div class="uk-grid-small uk-child-width-expand@l" uk-grid>
+                  <div>
+                    <div class="select-wrap uk-flex uk-flex-column">
+                      <label for="model">Model</label>
+                      <select name="model" aria-label="Select">
+                        <option value="ladies-s">Ladies - Small</option>
+                        <option value="ladies-m">Ladies - Medium</option>
+                        <option value="ladies-m">Ladies - Large</option>
+                        <option value="gents-s">Gents - Small</option>
+                        <option value="gents-m">Gents - Medium</option>
+                        <option value="gents-l">Gents - Large</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div class="select-wrap uk-flex uk-flex-column">
+                      <label for="color">Color</label>
+                      <select name="color" aria-label="Select">
+                        <option value="black">Black</option>
+                        <option value="white">White</option>
+                        <option value="yellow">Yellow</option>
+                        <option value="green">Green</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="uk-margin">
+                  <div class="checkbox">
+                    <label>
+                      <input class="uk-checkbox" type="checkbox" checked /> Add
+                      option lorem ipsum
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <label>
+                      <input class="uk-checkbox" type="checkbox" /> Add option
+                      autpat velit cano totam rem aperiam
+                    </label>
+                  </div>
+                </div>
+                <p uk-margin>
+                  <button class="uk-button btn-green">
+                    Add to cart
+                  </button>
+                  <button
+                    id="contactUsButton"
+                    class="uk-button btn-green-inverse"
+                  >
+                    Contact us
+                  </button>
+                </p>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- The Modal -->
+    <div id="contactUsModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p class="fn-w-600 fn-modal">Contact us</p>
+        <p>We’ll get back to you as soon as possible.</p>
+        <div class="uk-margin">
+          <input
+            class="uk-input background-light-gray"
+            type="text"
+            placeholder="Your e-mail"
+            aria-label="Input"
+          />
+        </div>
+        <div class="uk-margin">
+          <textarea
+            class="uk-textarea background-light-gray"
+            rows="5"
+            placeholder="Your message"
+            aria-label="Textarea"
+          ></textarea>
+        </div>
+        <div class="uk-flex uk-flex-right@m">
+          <div uk-margin>
+            <button class="uk-button btn-orange-inverse">
+              Cancel
+            </button>
+            <button class="uk-button btn-orange">
+              Send message
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="uk-container uk-container-large">
+      <div
+        class="uk-margin-medium-top uk-grid-small fn-paragraph fn-w-600"
+        uk-grid
+      >
+        <div>
+          <a href="#">
+            <p class="uk-margin-remove fn-w-600">Description</p>
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <p class="uk-margin-remove fn-w-600">Specifications</p>
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <p class="uk-margin-remove fn-w-600">Reviews (7)</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <section class="uk-container uk-container-large">
+      <div
+        class="uk-child-width-1-2@m uk-grid-small uk-grid-match uk-margin-medium-top uk-margin-medium-bottom"
+        uk-grid
+      >
+        <div>
+          <img
+            src="./assets/images/bicycle2.png"
+            alt="two people cycling image"
+          />
+        </div>
+
+        <div class="uk-flex-first@m">
+          <div class="uk-width-4-5@l text-primary">
+            <h2>Product description</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur.
+            </p>
+            <p>
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              officia deserunt mollit anim id est laborum. Sed ut perspiciatis
+              unde omnis iste natus error sit voluptatem accusantium doloremque
+              laudantium.
+            </p>
+            <button class="uk-button btn-orange-inverse">
+              More info
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="background-light-gray">
+      <div class="uk-container uk-container-large uk-padding">
+        <h2>Technical specifications</h2>
+
+        <table class="uk-table uk-table-striped">
+          <thead>
+            <tr>
+              <th>Model</th>
+              <th>Frame size</th>
+              <th>Weight</th>
+              <th class="uk-visible@m">Max speed</th>
+              <th class="uk-visible@m">Battery</th>
+              <th class="uk-visible@m">Engine</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Ladies - Small</td>
+              <td>50 cm</td>
+              <td>24 kg</td>
+              <td class="uk-visible@m">45 km/h</td>
+              <td class="uk-visible@m">625 Wh</td>
+              <td class="uk-visible@m">Bosch Performance Line Speed</td>
+            </tr>
+            <tr>
+              <td>Ladies - Medium</td>
+              <td>55 cm</td>
+              <td>25 kg</td>
+              <td class="uk-visible@m">45 km/h</td>
+              <td class="uk-visible@m">625 Wh</td>
+              <td class="uk-visible@m">Bosch Performance Line Speed</td>
+            </tr>
+            <tr>
+              <td>Ladies - Large</td>
+              <td>60 cm</td>
+              <td>26 kg</td>
+              <td class="uk-visible@m">45 km/h</td>
+              <td class="uk-visible@m">625 Wh</td>
+              <td class="uk-visible@m">Bosch Performance Line Speed</td>
+            </tr>
+            <tr>
+              <td>Gents - Small</td>
+              <td>50 cm</td>
+              <td>24 kg</td>
+              <td class="uk-visible@m">45 km/h</td>
+              <td class="uk-visible@m">625 Wh</td>
+              <td class="uk-visible@m">Bosch Performance Line Speed</td>
+            </tr>
+            <tr>
+              <td>Gents - Medium</td>
+              <td>55 cm</td>
+              <td>25 kg</td>
+              <td class="uk-visible@m">45 km/h</td>
+              <td class="uk-visible@m">625 Wh</td>
+              <td class="uk-visible@m">Bosch Performance Line Speed</td>
+            </tr>
+            <tr>
+              <td>Gents - Large</td>
+              <td>60 cm</td>
+              <td>26 kg</td>
+              <td class="uk-visible@m">45 km/h</td>
+              <td class="uk-visible@m">625 Wh</td>
+              <td class="uk-visible@m">Bosch Performance Line Speed</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <script>
+      const modal = document.getElementById("contactUsModal");
+      const btn = document.getElementById("contactUsButton");
+      const close = document.getElementsByClassName("close")[0];
+
+      btn.onclick = function() {
+        modal.style.display = "block";
+        document.body.style.overflow = "hidden";
+      };
+
+      close.onclick = function() {
+        modal.style.display = "none";
+        document.body.style.overflow = "scroll";
+      };
+
+      window.onclick = function(event) {
+        event.preventDefault();
+        if (event.target == modal) {
+          modal.style.display = "none";
+          document.body.style.overflow = "scroll";
+        }
+      };
+    </script>
+  </body>
+</html>

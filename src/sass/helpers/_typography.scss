@@ -1,0 +1,35 @@
+@use '../abstracts' as *;
+
+// Font weight
+.fn-w-400 {
+  font-weight: $fn-w-400;
+}
+.fn-w-600 {
+  font-weight: $fn-w-600;
+}
+
+// Font size
+.fn-smaller {
+  font-size: $fn-11;
+}
+.fn-small {
+  font-size: $fn-13;
+}
+.fn-paragraph {
+  font-size: $fn-16;
+}
+.fn-nav {
+  font-size: $fn-18;
+}
+.fn-icon {
+  font-size: $fn-20;
+}
+.fn-modal {
+  font-size: $fn-24;
+}
+.fn-title {
+  font-size: $fn-28;
+}
+.fn-xl {
+  font-size: $fn-40;
+}

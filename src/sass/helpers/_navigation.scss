@@ -1,0 +1,35 @@
+@use '../abstracts' as *;
+
+.uk-navbar-container:not(.uk-navbar-transparent) {
+  background-color: $orange;
+}
+
+.uk-search-default .uk-search-input {
+  background-color: $light-gray;
+  border-radius: 4px 4px 0 0;
+  font-size: $fn-13;
+  &:focus {
+    background-color: $light-gray;
+  }
+}
+
+.uk-offcanvas-bar {
+  background-color: $orange;
+  border-right: 1px solid $darkest-gray;
+}
+
+.active {
+  border-bottom: 5px solid $semi-black;
+}
+
+.uk-nav-default li a {
+  color: $white !important;
+}
+.nav-left ul li a {
+  @include font-prop($fn-18, $fn-w-600, $white);
+  font-family: "Inter", sans-serif;
+  text-transform: capitalize;
+  &:hover {
+    color: $semi-black;
+  }
+}
