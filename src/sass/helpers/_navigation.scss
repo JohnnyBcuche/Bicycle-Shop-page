@@ -22,8 +22,11 @@
   border-bottom: 5px solid $semi-black;
 }
 
-.uk-nav-default li a {
-  color: $white !important;
+.uk-offcanvas-bar .uk-nav-default li a {
+  color: $white;
+  &:hover {
+    color: $semi-black;
+  }
 }
 .nav-left ul li a {
   @include font-prop($fn-18, $fn-w-600, $white);
